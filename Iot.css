@@ -65,7 +65,11 @@ h1 {
 
 .container {
     display: table;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: transparent;
+    border-radius:2%;
     margin: 0 auto;
+    padding: 5px;
 }
 
 .icon {
