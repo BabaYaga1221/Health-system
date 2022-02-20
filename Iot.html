@@ -16,12 +16,12 @@
         
         function askForApproval() {
             if(Notification.permission === "granted") {
-                createNotification('Wow! This is great', 'created by @study.tonight', 'https://www.studytonight.com/css/resource.v2/icons/studytonight/st-icon-dark.png');
+                createNotification('Glucose started injecting, notification will pop after sometimes', 'created by WishyWave Hospital', 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Fsign-symbol-health-logo-hospital-red-cross-vector-35679588&psig=AOvVaw3CI1hrg7WaBVuKXXYka1Mv&ust=1645387803440000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPC4qq7JjPYCFQAAAAAdAAAAABAD');
             }
             else {
                 Notification.requestPermission(permission => {
                     if(permission === 'granted') {
-                        createNotification('Wow! This is great', 'created by @study.tonight', 'https://www.studytonight.com/css/resource.v2/icons/studytonight/st-icon-dark.png');
+                        alert('Glucose started injecting, notification will pop after sometimes', 'created by WishyWave Hospital', 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Fsign-symbol-health-logo-hospital-red-cross-vector-35679588&psig=AOvVaw3CI1hrg7WaBVuKXXYka1Mv&ust=1645387803440000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPC4qq7JjPYCFQAAAAAdAAAAABAD');
                     }
                 });
             }
